@@ -1,0 +1,583 @@
+body {
+    max-height: 100%;
+    max-width: 100%;
+    background: #151414;
+}
+
+nav {
+    background-color: #201c1c;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav>img {
+    height: 50px;
+    width: 50px;
+}
+
+ol {
+    display: flex;
+    gap: 50px;
+    color: aliceblue;
+    padding: 10px;
+    margin-left: 400px;
+}
+
+a {
+    font-family: 'Sarala', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+a:hover {
+    color: greenyellow;
+}
+
+#apresentacao {
+    background-color: #181717;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 0px 0px 10px;
+    font-size: 25px;
+}
+
+.apresentacao-eu {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Sarala', sans-serif;
+}
+
+.apresentacao-nome {
+    display: flex;
+    align-items: start;
+    color: rgb(56, 59, 243);
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 10px;
+    margin: 15px;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    animation: blinkCursor 100ms steps(40) infinite normal, typing 4s steps(50) 1s normal both;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 7em;
+    }
+}
+
+@keyframes blinkCursor {
+    form {
+        border-right-color: (255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.buttons {
+    height: 50px;
+    width: 400px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    transition: 1s background;
+}
+
+.linkedin {
+    background-color: rgb(219, 111, 39);
+    font-size: 14px;
+    width: 130px;
+    color: rgb(56, 59, 243);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 1s;
+    cursor: pointer;
+    border: solid 1px;
+}
+
+.linkedin:hover {
+    background: mediumspringgreen
+}
+
+.github {
+    background-color: rgb(219, 111, 39);
+    font-size: 14px;
+    width: 130px;
+    color: rgb(56, 59, 243);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 1s;
+    cursor: pointer;
+    border: solid 1px;
+}
+
+.github:hover {
+    background: mediumspringgreen;
+}
+
+#banner {
+    width: 800px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#footer {
+    background: #181717;
+    align-content: center;
+}
+
+#footer>h2 {
+    color: rgb(56, 59, 243);
+    padding-top: 15px;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Sarala', sans-serif;
+}
+
+.contatos {
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.we>p>strong {
+    color: green;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Sarala', sans-serif;
+}
+
+.we {
+    display: flex;
+    justify-content: space-evenly;
+    width: 240px;
+    margin: 15px;
+    color: aliceblue;
+    font-family: 'Sarala', sans-serif;
+}
+
+.em>p>strong {
+    color: rgb(146, 11, 11);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Sarala', sans-serif;
+}
+
+.em {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    margin: 15px;
+    color: aliceblue;
+    font-family: 'Sarala', sans-serif;
+}
+
+.logos {
+    height: 50px;
+    width: 50px;
+}
+
+.logos1 {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    nav,
+    main,
+    Footer {
+        width: auto;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    ol {
+        padding: 10px;
+        margin: 0%;
+        gap: 15px;
+    }
+    a {
+        font-size: 13px;
+        justify-content: center;
+    }
+    #apresentacao {
+        width: auto;
+    }
+    .apresentacao-eu {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+    .apresentacao-nome {
+        display: flex;
+        padding-left: 90px;
+    }
+    .buttons {
+        justify-content: space-around;
+    }
+    .linkedin:hover {
+        background: mediumspringgreen;
+        transition: 1s;
+    }
+    .github:hover {
+        background: mediumspringgreen;
+    }
+    #banner {
+        margin-top: 50px;
+        height: 50%;
+        width: 100%;
+    }
+}
+
+
+/*Css pagina Sobre*/
+
+#sobre {
+    color: rgb(255, 255, 255);
+    border: 0;
+    margin: 0;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.yo {
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    text-align: justify;
+    height: 350px;
+}
+
+.imageEu {
+    margin: 55px;
+    border: solid rgb(54, 8, 123) 2px;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+}
+
+.sobre-eu {
+    width: 60%;
+}
+
+.euu {
+    font-size: 19px;
+}
+
+@media screen and (max-width: 480px) {
+    #sobre {
+        height: 0px;
+    }
+    .yo:nth-child(1) {
+        margin: 0 0 50px 0px;
+    }
+}
+
+
+/* css pagina habilidades*/
+
+#Meu-universo {
+    color: rgb(255, 255, 255);
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.h-1 {
+    text-align: center;
+}
+
+.tech {
+    margin: 30px;
+}
+
+.img-techno {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 40px;
+    animation: rot 7s linear infinite;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotateY(0deg);
+        content: url(/imagens/technology.webp);
+    }
+    50% {
+        transform: rotateY(180deg);
+        content: url(/imagens/tech2.jpg);
+    }
+}
+
+.art {
+    margin: 30px;
+}
+
+.astro {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 38px;
+    animation: Art 7s linear infinite;
+}
+
+@keyframes Art {
+    0% {
+        transform: rotateY(0deg);
+        content: url(/imagens/art2.png);
+    }
+    50% {
+        transform: rotateY(180deg);
+        content: url(/imagens/Astro.png);
+    }
+}
+
+.img-foguete {
+    width: 250px;
+    height: 250px;
+    margin: 40px;
+    border-radius: 50%;
+    animation: space 7s linear infinite;
+}
+
+@keyframes space {
+    0% {
+        transform: rotateY( 0deg);
+        content: url(/imagens/Espacial.jpg);
+    }
+    50% {
+        transform: rotateY(180deg);
+        content: url(/imagens/foguete.webp);
+    }
+}
+
+.space {
+    margin: 30px;
+    height: 200px;
+    align-items: center;
+}
+
+.hortas {
+    padding: 30px;
+    height: 200px;
+}
+
+.img-hortas {
+    width: 250px;
+    height: 250px;
+    margin: 40px;
+    border-radius: 50%;
+    transition: width 2s, height 2s;
+    border: 3px solid rgb(9, 136, 41);
+    animation: Hort 7s linear infinite;
+}
+
+.img-hortas:hover {
+    width: 700px;
+    height: 500px;
+    background-image: url(imagens/Background6..jpg);
+    transition: 1s;
+    background-size: 1px;
+    border: solid 1px red;
+    font-size: 1px;
+    cursor: pointer;
+    border-radius: 0%;
+    transition: width 2s, height 2s;
+    animation: Hort 15s linear infinite;
+}
+
+@keyframes Hort {
+    0% {
+        transform: rotateY(0deg);
+        content: url(/imagens/Background6..jpg);
+    }
+    50% {
+        transform: rotateY(180deg);
+        content: url(/imagens/Hort2.jfif);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #Meu-Universo {
+        display: flex;
+        justify-content: space-between;
+        text-align: justify;
+    }
+    h1,
+    h3 {
+        text-align: center;
+        color: coral;
+        margin-top: auto;
+    }
+    .yo {
+        height: auto;
+    }
+    .h-1 {
+        color: brown;
+        font-size: 30px;
+        margin: 30px 15px 10px 15px;
+    }
+    .yo:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+    .yo:nth-child(5) {
+        flex-direction: column-reverse;
+    }
+    .yo:nth-child(6) {
+        margin: 10px 1px 30px 0;
+    }
+    .img-techno {
+        margin: auto;
+    }
+    .astro {
+        margin: auto;
+    }
+    .img-foguete {
+        margin-top: 190px;
+    }
+    .img-hortas {
+        margin-top: 220px;
+    }
+    .img-hortas:hover {
+        transition: none;
+        animation: none;
+        width: 80%;
+    }
+}
+
+
+/*CSS da página projetos*/
+
+.Projetos {
+    color: aliceblue;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imagens/fund.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+section {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.UX {
+    border: 2px solid rgb(20, 23, 211);
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    background: rgb(23, 36, 61);
+}
+
+.TI {
+    border: 2px solid rgb(185, 16, 16);
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    background: #151414;
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 700px;
+    }
+    .Projetos {
+        align-items: center;
+        margin: 20px;
+        background-image: url(/imagens/fund2.jfif);
+        background-size: 91.9%;
+        background-position: initial;
+    }
+    .UX {
+        display: flex;
+        height: 290px;
+        margin: 20px 0 30px 0px;
+        font-size: 13px;
+    }
+    .TI {
+        align-items: center;
+        height: 290px;
+        margin: 0px 0px 30px 0;
+        font-size: 13px;
+    }
+    .contatos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 50%;
+    }
+    .we,
+    .em>p {
+        font-size: 15px;
+    }
+}
